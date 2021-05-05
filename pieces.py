@@ -1,4 +1,4 @@
-import board
+
 class pawn:
 
     def __init__(self,icol,irow,color):
@@ -24,7 +24,6 @@ class pawn:
             start = self.row
             end = int(start) + self.color
             self.row=str(end)
-        board.printboard()
 
 
 
