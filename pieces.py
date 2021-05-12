@@ -6,6 +6,11 @@ class pawn:
         self.column = icol
         self.row = irow
         self.color = color
+        self.value = 1.0
+        if self.color == 1:
+            self.id = "wp"
+        else:
+            self.id = "bp"
     def move(self,am=1):
         if am > 2:
             print("Error: Invalid Move")

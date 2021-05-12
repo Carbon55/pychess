@@ -25,19 +25,19 @@ class chessgame(object):
 
         self.board = [
                  ['br','bn','bb','bq','bk','bb','bn','br'],
-                 ['bp','bp','bp','bp','bp','bp','bp','bp'],
+                 [bp1.id,bp2.id,bp3.id,bp4.id,bp5.id,bp6.id,bp7.id,bp8.id],
                  [' ',' ',' ',' ',' ',' ',' ',' '],
                  [' ',' ',' ',' ',' ',' ',' ',' '],
                  [' ',' ',' ',' ',' ',' ',' ',' '],
                  [' ',' ',' ',' ',' ',' ',' ',' '],
-                 ['wp','wp','wp','wp','wp','wp','wp','wp'],
+                 [wp1.id,wp2.id,wp3.id,wp4.id,wp5.id,wp6.id,wp7.id,wp8.id],
                  ['wr','wn','wb','wq','wk','wb','wn','wr']]
 
 
 
-    def wmove(piece,spos,epos):
+    def wmove(self,spos,epos):
         #start position and end position
-
+        print(self.board[spos][epos])
 
 
         pass
@@ -63,7 +63,7 @@ class chessgame(object):
         print("▟ ",end="")
         abc = ["a","b","c","d","e","f","g","h"]
         for a in range(0,8):
-            print(abc[a],end='  ')
+            print(abc[a],end='  ')
         print("")
         for i in range(0,8):
             # hint: Magic pre-row
