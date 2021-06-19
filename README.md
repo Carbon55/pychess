@@ -1,5 +1,4 @@
 # PyChess
-## not a ripoff of Lichess
 
 
 Chess but not good
