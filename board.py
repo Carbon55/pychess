@@ -25,12 +25,12 @@ class chessgame(object):
 
         self.board = [
                  ['br','bn','bb','bq','bk','bb','bn','br'],
-                 [bp1.id,bp2.id,bp3.id,bp4.id,bp5.id,bp6.id,bp7.id,bp8.id],
+                 [bp1,bp2,bp3,bp4,bp5,bp6,bp7,bp8],
                  [' ',' ',' ',' ',' ',' ',' ',' '],
                  [' ',' ',' ',' ',' ',' ',' ',' '],
                  [' ',' ',' ',' ',' ',' ',' ',' '],
                  [' ',' ',' ',' ',' ',' ',' ',' '],
-                 [wp1.id,wp2.id,wp3.id,wp4.id,wp5.id,wp6.id,wp7.id,wp8.id],
+                 [wp1,wp2,wp3,wp4,wp5,wp6,wp7,wp8],
                  ['wr','wn','wb','wq','wk','wb','wn','wr']]
 
 
@@ -69,7 +69,7 @@ class chessgame(object):
             # hint: Magic pre-row
             print(7-i+1,end='|')
             for j in range(0,8):
-                piece = self.board[i][j]
+                piece = self.board[i][j].id
                 print(dictionary[piece],end='|')
             #hint : Magic post-row
             print("")
